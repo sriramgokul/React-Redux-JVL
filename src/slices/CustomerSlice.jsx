@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-let initialState = [];
+const initialState = [];
 
 const customerSlice = createSlice({
-    name:"customer",
+    name : "customer",
     initialState,
-    reducers: {
+    reducers : {
         addCustomer(state,action){
             state.push(action.payload)
         },
@@ -14,7 +14,7 @@ const customerSlice = createSlice({
             return state.filter((val,index)=> index !== deleteIndex)
         }
     }
-})
+});
 
-export const {addCustomer,deleteCustomer} = customerSlice.actions;
+export const {addCustomer, deleteCustomer} = customerSlice.actions;
 export default customerSlice.reducer;

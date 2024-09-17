@@ -7,15 +7,16 @@ import { store } from './store'
 function App() {
 
   return (
-    
     <Provider store={store}>
-      <>
-      <h1>React Redux Customer Example</h1>
-    <CustomerAdd/>
-    <CustomerView/>
-    </>
+    <div className='app'>
+  <h1>React Redux Customer Example</h1>
+  <CustomerAdd/>      
+  <CustomerView/>
+  </div>
+
     </Provider>
-      
+  
+    
   )
 }
 
